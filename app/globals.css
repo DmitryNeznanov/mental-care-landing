@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --white: #ffffff;
+    --black: #000000;
+    --green: #6bd17b;
+    --gray: #42445d;
+  }
+  .h1 {
+    @apply font-poppins font-medium text-[39px] md:text-[58px] lg:text-[55.1px] leading-[120%];
+  }
+  .h2 {
+    @apply font-poppins font-medium text-[13.35px] md:text-[32.75px] lg:text-[36.75px];
+  }
+  .h3 {
+    @apply font-roboto font-medium text-[11.67px] md:text-[12.59px] lg:text-[18px];
+  }
+}
+
+@layer components {
+  .gradient-xl {
+    @apply bg-gradient-to-r from-[#ddd3ef] from-0% via-[#FDD9FF] via-[42%] to-[#B2E0FE] to-[100%];
+  }
+  .inter-light {
+    @apply font-inter font-light text-[13.38px] md:text-[19.38px] lg:text-[18.4px];
+  }
+  .inter-regular-xl {
+    @apply font-inter font-normal text-[13.32px] md:text-[18.11px] lg:text-[18.11px];
+  }
+  .inter-regular-2xl {
+    @apply font-inter font-normal text-[19.08px] md:text-[19.08px] lg:text-[18.11px];
+  }
+  .roboto-regular {
+    @apply font-roboto font-normal text-[9.07px] md:text-[9.79px] lg:text-[14px];
+  }
+  .hover-underline {
+    @apply;
+  }
+}
+
+@layer utilities {
+}
