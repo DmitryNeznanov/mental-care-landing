@@ -1,5 +1,8 @@
-import Image from "next/image"
-
+import type { Metadata } from "next"
+export const metadata: Metadata = {
+  title: "MENTALcare | Home",
+  description: "MENTALcare Home page",
+}
 export default function Home() {
   return (
     <div>

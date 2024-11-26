@@ -1,6 +1,8 @@
 import type { Metadata } from "next"
 import { Poppins, Inter, Roboto } from "next/font/google"
 import "./globals.css"
+import Header from "./components/Header"
+import Footer from "./components/Footer"
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -19,8 +21,8 @@ const roboto = Roboto({
 })
 
 export const metadata: Metadata = {
-  title: "MENTALcare | Home",
-  description: "MENTALcare Home Page",
+  title: "MENTALcare",
+  description: "MENTALcare website",
 }
 
 export default function RootLayout({
@@ -33,7 +35,9 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} ${inter.variable} ${roboto.variable}`}
       >
-        {children}
+        <Header />
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   )
