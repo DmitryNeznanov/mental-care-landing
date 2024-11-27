@@ -5,6 +5,10 @@ import { usePathname } from "next/navigation"
 
 export default function Nav() {
   const pathName = usePathname()
+  function closeMenu() {
+    const menu = document.getElementById("mobileMenu")!
+    menu.style.width = "0%"
+  }
   return (
     <nav>
       <ul className="flex flex-col md:flex-row  gap-y-[60px] md:gap-x-[30px] lg:gap-x-[60px] inter-regular-xl capitalize">
@@ -15,7 +19,11 @@ export default function Nav() {
           ["pricing", "pricing"],
         ].map(([text, link], i) => {
           return (
-            <li key={i}>
+            <li
+              className="w-max"
+              key={i}
+              onClick={closeMenu}
+            >
               <Link
                 className={`inter-regular-2xl flex flex-col relative ${
                   pathName === "/" && link === pathName

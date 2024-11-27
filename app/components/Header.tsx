@@ -1,8 +1,8 @@
 import Image from "next/image"
 import Nav from "./Nav"
 import Link from "next/link"
-import Menu from "./MobileMenu/Menu"
-import OpenMenu from "./MobileMenu/openMenu"
+import MobileMenu from "./MobileMenu"
+import OpenMobileMenuButton from "./OpenMobileMenuButton"
 export default function Header() {
   return (
     <header className="container pt-[26px] md:pt-[38px] xl:pt-[27px] flex flex-row items-center justify-between">
@@ -13,6 +13,7 @@ export default function Header() {
             width={147}
             height={44}
             alt="logo"
+            priority={true}
           ></Image>
         </Link>
       </div>
@@ -29,8 +30,8 @@ export default function Header() {
           </span>
         </Link>
       </div>
-      <OpenMenu />
-      <Menu />
+        <OpenMobileMenuButton />
+        <MobileMenu />
     </header>
   )
 }

@@ -1,12 +1,10 @@
 "use client"
 import Image from "next/image"
 
-export default function CloseMenu() {
+export default function CloseMobileMenuButton() {
   function closeMenu() {
     const menu = document.getElementById("mobileMenu")!
-    menu.classList.toggle("w-[0%]")
-    menu.classList.toggle("w-[100%]")
-    document.body.classList.toggle("overflow-hidden")
+    menu.style.width = "0%"
   }
   return (
     <button

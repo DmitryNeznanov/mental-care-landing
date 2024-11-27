@@ -1,18 +1,17 @@
 "use client"
 import Image from "next/image"
 
-export default function OpenMenu() {
+export default function OpenMobileMenuButton() {
   function openMenu() {
     const menu = document.getElementById("mobileMenu")!
-    menu.classList.toggle("w-[0%]")
-    menu.classList.toggle("w-[100%]")
-    document.body.classList.toggle("overflow-hidden")
+    menu.style.width = "100%"
   }
   return (
     <button
       className="md:hidden"
       type="button"
       onClick={openMenu}
+      id="mobileMenuButton"
     >
       <Image
         src="./svg/open-menu-button.svg"
