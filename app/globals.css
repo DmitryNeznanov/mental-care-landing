@@ -21,6 +21,7 @@
 }
 
 @layer components {
+  /* Fonts */
   .inter-light {
     @apply font-inter font-light text-[13.38px] md:text-[19.38px] lg:text-[18.4px];
   }
@@ -34,11 +35,13 @@
     @apply font-inter font-normal text-[19.08px] md:text-[19.08px] lg:text-[18.11px];
   }
   .roboto-regular {
-    @apply font-roboto font-normal text-[9.07px] md:text-[9.79px] lg:text-[14px];
+    @apply font-roboto font-normal text-[12px] md:text-[12px] lg:text-[14px];
   }
+  /* Gradient  */
   .gradient-xl {
     @apply bg-gradient-to-r from-[#ddd3ef] from-0% via-[#FDD9FF] via-[42%] to-[#B2E0FE];
   }
+  /* Buttons */
   .button-gradient {
     @apply px-[31.5px] py-[10.11px] gradient-xl inter-regular-3xl outline outline-[1px] outline-[#00000048] -outline-offset-1 rounded-[4.85px] gradient-xl hover:bg-none capitalize hover:bg-black hover:outline-none;
   }
