@@ -18,7 +18,6 @@ export default function Footer() {
                   target="_blank"
                 >
                   <Image
-                    className="w-[15px] h-[15px] md:w-[30px] md:h-[30px] lg:w-[40px] lg:h-[40px]"
                     src={`./icons/${src}`}
                     width={40}
                     height={40}

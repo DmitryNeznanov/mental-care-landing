@@ -13,7 +13,7 @@
     @apply font-poppins font-medium text-[39px] md:text-[45px] xl:text-[55.1px] leading-[120%];
   }
   h2 {
-    @apply font-poppins font-medium text-[13.35px] md:text-[32.75px] lg:text-[36.75px];
+    @apply font-poppins font-medium text-[18.35px] md:text-[32.75px] lg:text-[36.75px];
   }
   h3 {
     @apply font-roboto font-medium text-[11.67px] md:text-[12.59px] lg:text-[18px];
@@ -43,10 +43,13 @@
   }
   /* Buttons */
   .button-gradient {
-    @apply px-[31.5px] py-[10.11px] gradient-xl inter-regular-3xl outline outline-[1px] outline-[#00000048] -outline-offset-1 rounded-[4.85px] gradient-xl hover:bg-none capitalize hover:bg-black hover:outline-none;
+    @apply px-[30px] py-[12px] gradient-xl inter-regular-3xl outline outline-[1px] outline-[#00000048] -outline-offset-1 rounded-[4.85px] gradient-xl hover:bg-none capitalize hover:bg-black hover:outline-none;
+  }
+  .button-black {
+    @apply px-[30px] py-[12px] bg-black inter-regular-3xl text-white rounded-[4px] capitalize;
   }
   .button-transparent {
-    @apply px-[31.5px] py-[10.11px] gradient-xl inter-regular-3xl outline outline-[1px] outline-[#00000048] -outline-offset-1 rounded-[4.85px] gradient-xl hover:bg-none capitalize hover:bg-black hover:outline-none;
+    @apply px-[30px] py-[12px] bg-white inter-regular-3xl text-black rounded-[4px] capitalize;
   }
 }
 

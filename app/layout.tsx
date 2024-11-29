@@ -33,11 +33,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} ${inter.variable} ${roboto.variable}`}
+        className={` ${poppins.variable} ${inter.variable} ${roboto.variable}`}
       >
-        <Header />
-        <main>{children}</main>
-        <Footer />
+        <div className="min-h-screen flex flex-col justify-between">
+          <Header />
+          <main>{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   )
