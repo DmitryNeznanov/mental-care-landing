@@ -23,9 +23,9 @@ export default {
         gray: "var(--gray)",
       },
       fontFamily: {
-        poppins: "ver(--font-poppins)",
-        inter: "ver(--font-inter)",
-        roboto: "ver(--font-roboto)",
+        poppins: "var(--font-poppins)",
+        inter: "var(--font-inter)",
+        roboto: "var(--font-roboto)",
       },
       boxShadow: {
         xl: "10.37px 10.37px 22.69px 0px rgba(0,0,0,9%)",
